@@ -70,7 +70,7 @@ script.on_event(defines.events, function(event)
 end)
 
 function speed(adjust)
-    game.speed = math.clamp(game.speed + adjust, 0.5, 10)
+    game.speed = math.clamp(game.speed + adjust, 0.1, 10)
 
 	for playerIndex, player in pairs(game.players) do
 		if player.gui.top.decrease then
